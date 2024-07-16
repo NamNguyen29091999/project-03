@@ -100,6 +100,12 @@
         <!-- Reset-CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
+
+        <!-- Animation -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
     </head>
     <body>
         <!-- Header -->
@@ -155,7 +161,9 @@
                 <section class="hero">
                     <!-- Hero content -->
                     <section class="hero__content">
-                        <h1 class="hero__heading">
+                        <h1
+                            class="hero__heading animate__animated animate__bounceInLeft"
+                        >
                             Exceptional dental care for all ages.
                         </h1>
                         <p class="hero__desc">
@@ -176,12 +184,12 @@
                             <img
                                 src="./assets/img/hero-01.jpg"
                                 alt=""
-                                class="hero__img"
+                                class="hero__img animate__animated animate__backInDown"
                             />
                             <img
                                 src="./assets/img/hero-02.jpg"
                                 alt=""
-                                class="hero__img"
+                                class="hero__img animate__animated animate__backInDown"
                             />
                         </figure>
                     </div>
@@ -192,7 +200,9 @@
         <main>
             <!-- Services -->
             <section class="service">
-                <div class="container">
+                <div
+                    class="container wow animate__animated animate__slideInDown"
+                >
                     <h2 class="service__heading section-heading">
                         Our services
                     </h2>
@@ -205,11 +215,13 @@
                             <img
                                 src="./assets/img/service.jpg"
                                 alt=""
-                                class="service__img"
+                                class="service__img wow animate__animated animate__slideInLeft"
                             />
                         </figure>
                         <div>
-                            <div class="service-list">
+                            <div
+                                class="service-list wow animate__animated animate__slideInLeft"
+                            >
                                 <!-- Service item 1 -->
                                 <section class="service-item">
                                     <div class="service-item__icon">
@@ -292,7 +304,11 @@
                                     </div>
                                 </section>
                             </div>
-                            <a href="#!" class="btn">All Services</a>
+                            <a
+                                href="#!"
+                                class="btn wow animate__animated animate__slideInLeft"
+                                >All Services</a
+                            >
                         </div>
                     </div>
                 </div>
@@ -840,5 +856,14 @@
                 </div>
             </div>
         </footer>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script>
+            new WOW().init();
+        </script>
     </body>
 </html>
